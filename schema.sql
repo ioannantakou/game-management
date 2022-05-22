@@ -1,0 +1,21 @@
+DROP DATABASE IF EXISTS games;
+
+CREATE DATABASE games;
+
+CREATE TABLE IF NOT EXISTS match (
+id SERIAL PRIMARY KEY,
+description VARCHAR,
+match_date DATE,
+match_time TIME,
+team_a VARCHAR,
+team_b VARCHAR,
+sport INTEGER
+);
+
+
+CREATE TABLE IF NOT EXISTS matchOdds (
+id SERIAL PRIMARY KEY,
+match_id INTEGER REFERENCES match(id),
+specifier VARCHAR,
+odd DOUBLE PRECISION
+);

@@ -1,0 +1,35 @@
+version: '3'
+
+services:
+#  game-management:
+#    build:
+#      context: .
+#      dockerfile: ./Dockerfile
+#    image: game-management:latest
+#    network_mode: bridge
+#    ports:
+#      - "8080:8080"
+#    environment:
+#      SPRING_DATASOURCE_URL: jdbc:postgresql://postgresql:5432/postgres
+#      SPRING_DATASOURCE_USERNAME: postgres
+#      SPRING_DATASOURCE_PASSWORD: postgres
+#    depends_on:
+#      - postgresql
+#    links:
+#      - postgresql
+
+  postgresql:
+    image: postgres
+    container_name: pg-docker
+    environment:
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=postgres
+      - POSTGRES_PORT=5432
+      - POSTGRES_DB=postgres
+    ports:
+      - "5432:5432"
+    command: "postgres -c config_file=/usr/local/etc/postgres/postgres.conf"
+    volumes:
+      - ./schema.sql:/docker-entrypoint-initdb.d/schema.sql
+      - ./postgres/postgres.conf:/usr/local/etc/postgres/postgres.conf
+    network_mode: bridge
