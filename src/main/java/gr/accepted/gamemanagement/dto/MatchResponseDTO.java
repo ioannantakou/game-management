@@ -19,19 +19,43 @@ import java.util.List;
 @AllArgsConstructor
 public class MatchResponseDTO {
 
+    /**
+     * The id
+     */
     private Long id;
 
+    /**
+     * The description of the match
+     */
     private String description;
 
+    /**
+     * A list of {@link MatchOddResponseDTO}
+     */
     private List<MatchOddResponseDTO> matchOdds;
 
+    /**
+     * The date of the match
+     */
     private LocalDate date;
 
+    /**
+     * The time of the match
+     */
     private LocalTime time;
 
+    /**
+     * Team A of the match
+     */
     private String teamA;
 
+    /**
+     * Team B of the match
+     */
     private String teamB;
 
+    /**
+     * The sport related
+     */
     private Sport sport;
 }

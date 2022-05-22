@@ -21,8 +21,7 @@ import javax.validation.Valid;
 import java.util.Optional;
 
 /**
- * Controller for
- * game management Rest API.
+ * Controller for game management Rest API.
  */
 @RestController
 @AllArgsConstructor

@@ -19,18 +19,36 @@ import java.time.LocalTime;
 @Builder
 public class MatchInputDTO {
 
+    /**
+     * The description of the match
+     */
     private String description;
 
+    /**
+     * The date of the match
+     */
     private LocalDate date;
 
+    /**
+     * The time of the match
+     */
     private LocalTime time;
 
+    /**
+     * Team A of the match
+     */
     @NotEmpty(message = "teamA must not be null or empty")
     private String teamA;
 
+    /**
+     * Team B of the match
+     */
     @NotEmpty(message = "teamB must not be null or empty")
     private String teamB;
 
+    /**
+     * The related sport
+     */
     @NotEmpty(message = "sport must not be null or empty")
     @ValueOfEnum(enumClass = Sport.class, message = "sport not supported")
     private String sport;

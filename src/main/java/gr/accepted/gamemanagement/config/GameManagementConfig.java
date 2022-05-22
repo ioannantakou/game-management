@@ -10,8 +10,13 @@ import org.springframework.context.annotation.Configuration;
 @Configuration
 public class GameManagementConfig {
 
+    /**
+     * Model mapper used for Request/Response objects
+     * @return {@link ModelMapper}
+     */
     @Bean
     ModelMapper modelMapper(){
         return new ModelMapper();
     }
+
 }

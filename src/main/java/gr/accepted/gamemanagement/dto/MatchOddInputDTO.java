@@ -16,9 +16,15 @@ import javax.validation.constraints.NotEmpty;
 @AllArgsConstructor
 public class MatchOddInputDTO {
 
+    /**
+     * The specifier of the match odd
+     */
     @NotEmpty(message = "specifier must not be null or empty")
     private String specifier;
 
+    /**
+     * The match odd value
+     */
     @NotEmpty(message = "odd must not be null or empty")
     private double odd;
 

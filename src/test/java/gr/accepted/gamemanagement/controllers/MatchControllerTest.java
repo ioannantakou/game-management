@@ -191,7 +191,7 @@ public class MatchControllerTest {
         Match match = new Match();
         match.setId(1L);
         match.setDescription("super final");
-        match.setDate(LocalDate.of(2022, 05, 30));
+        match.setDate(LocalDate.of(2022, 5, 30));
         match.setTeamA("PAO");
         match.setTeamB("OSFP");
         match.setTime(LocalTime.of(21, 0));
@@ -208,7 +208,7 @@ public class MatchControllerTest {
     private MatchInputDTO generateMatchInputDTO(){
         MatchInputDTO matchInputDTO = new MatchInputDTO();
         matchInputDTO.setDescription("super final");
-        matchInputDTO.setDate(LocalDate.of(2022, 05, 30));
+        matchInputDTO.setDate(LocalDate.of(2022, 5, 30));
         matchInputDTO.setTeamA("PAO");
         matchInputDTO.setTeamB("OSFP");
         matchInputDTO.setTime(LocalTime.of(21, 0));
@@ -219,7 +219,7 @@ public class MatchControllerTest {
     private MatchInputDTO generateInvalidMatchInputDTO(){
         MatchInputDTO matchInputDTO = new MatchInputDTO();
         matchInputDTO.setDescription("super final");
-        matchInputDTO.setDate(LocalDate.of(2022, 05, 30));
+        matchInputDTO.setDate(LocalDate.of(2022, 5, 30));
         matchInputDTO.setTeamA("PAO");
         matchInputDTO.setTeamB("OSFP");
         matchInputDTO.setTime(LocalTime.of(21, 0));
@@ -231,7 +231,7 @@ public class MatchControllerTest {
         Match match = new Match();
         match.setId(1L);
         match.setDescription("super final");
-        match.setDate(LocalDate.of(2022, 05, 30));
+        match.setDate(LocalDate.of(2022, 5, 30));
         match.setTeamA("PAO");
         match.setTeamB("PAOK");
         match.setTime(LocalTime.of(21, 0));

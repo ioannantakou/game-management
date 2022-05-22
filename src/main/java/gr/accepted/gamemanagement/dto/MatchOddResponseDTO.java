@@ -14,9 +14,18 @@ import lombok.Setter;
 @AllArgsConstructor
 public class MatchOddResponseDTO {
 
+    /**
+     * The id of the match odd
+     */
     private Long id;
 
+    /**
+     * The specifier of the match odd
+     */
     private String specifier;
 
+    /**
+     * The match odd value
+     */
     private double odd;
 }
