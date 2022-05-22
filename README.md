@@ -9,3 +9,9 @@ After checkout, navigate from a cmd inside the project folder and run :
 
 That was all! Inside the project a swagger API documentation exists in order to guide through the endpoints.
 Moreover integration and unit tests are implemented to verify functionality.
+Keep in mind that for the Rest API interaction, a basic authentication is required, with user being stored in the UserRepository. 
+Simply add following Authorization header:
+
+##### Basic aW9hbm5hOjEyMzQ=
+
+
